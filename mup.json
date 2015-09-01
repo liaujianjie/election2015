@@ -1,0 +1,23 @@
+{
+  "servers": [
+    {
+      "host": "election.jianjie.co",
+      "username": "root",
+      //"password": "password"
+      "pem": "~/.ssh/id_rsa"
+    }
+  ],
+  "setupMongo": true,
+  "setupNode": true,
+  "nodeVersion": "0.10.36",
+  "setupPhantom": true,
+  "enableUploadProgressBar": true,
+
+  "appName": "election2015",
+  "app": ".",
+  "env": {
+    "ROOT_URL": "http://election.jianjie.co"
+  },
+
+  "deployCheckWaitTime": 30
+}

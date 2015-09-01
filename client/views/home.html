@@ -1,0 +1,24 @@
+<template name="home">
+  <div class="title">
+    <h3>#SGelection2015</h3>
+  </div>
+  <p>
+    <h1><b>Show your support</b>,
+      <br>badge your Facebook profile</h1>
+  </p>
+  {{#if isLoggedIn}}
+    <div class="login-fb">Continue</div>
+  {{else}}
+    <div class="login-fb">Login Facebook</div>
+  {{/if}}
+  <div class="party-logos">
+    <div id="pap" class="party-logo"></div>
+    <div id="nsp" class="party-logo"></div>
+    <div id="rp" class="party-logo"></div>
+    <div id="sda" class="party-logo"></div>
+    <div id="sdp" class="party-logo"></div>
+    <div id="sfp" class="party-logo"></div>
+    <div id="spp" class="party-logo"></div>
+    <div id="wp" class="party-logo"></div>
+  </div>
+</template>
