@@ -1,0 +1,32 @@
+.pick {
+  text-align: center;
+}
+
+.pick > .container:first-child {
+  margin-top: 34px;
+}
+
+.pick > .container:nth-child(2) {
+  margin-top: 30px;
+}
+
+.pick .preview-img {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 0px;
+  border: 1px solid #bfbfbf;
+}
+
+.pick .media-body {
+  text-align: left;
+}
+
+.pick .media-header {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.pick .media-body > * {
+  display: block;
+}

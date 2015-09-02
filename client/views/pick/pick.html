@@ -1,0 +1,43 @@
+<template name="pick">
+  <div class="pick">
+    <div class="container">
+      <h3><strong>Select the party you support</strong></h3>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-0 col-md-2">
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <div class="row">
+            {{#each parties}}
+              <div class="col-xs-12 col-sm-6">
+
+                <div class="list-group">
+                  <a href="/confirm/{{this.slug}}" class="list-group-item" id="{{this.slug}}">
+                    <div class="media">
+                      <div class="media-left">
+                        <!-- <a href="#"> -->
+                          <canvas class="preview-img" id="preview-img-{{this.slug}}" width="180" height="180"></canvas>
+                          <!-- <img class="media-object preview-img" src="{{facebookProfileImageURL}}"> -->
+                        <!-- </a> -->
+                      </div>
+                      <div class="media-body">
+                        <span class="media-heading">{{this.name}}</span>
+                        <span>
+                          <button class="btn btn-sm btn-inverse select-party">SELECT</button>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            {{/each}}
+          </div>
+        </div>
+        <div class="col-xs-0 col-md-2">
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

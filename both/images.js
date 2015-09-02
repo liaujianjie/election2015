@@ -19,6 +19,9 @@ Images.allow({
   'update': function() {
     return true;
   },
+  'remove': function() {
+    return true;
+  },
   download: function() {
     return true;
   }
@@ -27,5 +30,11 @@ Images.allow({
 Meteor.methods({
   downloadImageFromURL: function(URL) {
      Images.insert(URL);
+  }
+});
+
+Meteor.methods({
+  removeImagesForFacebookId: function(facebookId) {
+     Images.remove({userId:facebookId});
   }
 });

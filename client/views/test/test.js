@@ -34,7 +34,7 @@ var FBWrapper = {
       if (isLoggedIn)
       {
         facebookAccessToken.set(response.authResponse.accessToken);
-        facebookUserId.set(response.authResponse.userID)
+        facebookUserId.set(response.authResponse.userID);
       }
 
       if (callback && typeof callback === "function")

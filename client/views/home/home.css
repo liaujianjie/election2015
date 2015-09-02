@@ -1,0 +1,23 @@
+.home {
+  text-align: center;
+}
+
+.home > .container:first-child {
+  margin-top: 34px;
+}
+
+.home .login-fb {
+  margin-top: 20px;
+}
+
+.home .party-logo-container {
+  margin-top: 30px;
+}
+
+.home .party-logo {
+  height: 80px;
+  width: 80px;
+  margin: 0px;
+  margin-left: 7px;
+  margin-right: 7px;
+}

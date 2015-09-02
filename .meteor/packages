@@ -12,4 +12,5 @@ riaan53:blueimp-canvas-to-blob
 cfs:standard-packages
 cfs:filesystem
 autopublish
-iron:router
+twbs:bootstrap
+kadira:flow-router
